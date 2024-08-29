@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora V1</title>
+    <script type="text/javascript">
+        function calculadora(){
+            let numero1 = Number(valor1.value);
+            let numero2 = Number(valor2.value);
+            resultado.value = String(numero1 + numero2);
+        }    
+        function validarValor(){
+            if(valor1.value == ''){
+                alert('Campo vazio.')
+            } else if(Number(valor1.value) < 0){
+                alert('Numero deve ser positivo')
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora V1</h1>
+    <hr>
+    <label for="valor1">Valor1 (positivo):</label>
+    <input type="text" id="valor1" onblur="validarValor()"><br>
+
+    <label for="valor2">Valor2 (positivo):</label>
+    <input type="text" id="valor2" ><br>
+
+    <label for="resultado">Resultado final:</label>
+    <output id="resultado" name="resultado"></output>
+    <br><br>
+    <input type="button" onclick="calculadora()" value="Calcular">
+</body>
+</html>

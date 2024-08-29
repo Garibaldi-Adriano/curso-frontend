@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/cinema.js" defer></script>
+</head>
+<body>
+    <h1>SG-Cinema</h1>
+    <hr>
+    <p>
+        <a href="./home.html">Home</a> &nbsp;
+        <a href="./filme.html">Filmes</a>&nbsp;
+        <a href="./sessao.html">Sessões</a>&nbsp;
+        <a href="./sala.html">Salas</a>&nbsp;
+        <a href="./ingresso.html">Ingressos</a>&nbsp;
+        <a href="./cliente.html">Cliente</a>&nbsp;
+        <a href="./contato.html">Contato</a>&nbsp;
+        <hr>
+    </p>
+    <h3 id="tituloPage">Filmes</h3>
+    <div class="container">
+        <p>
+            <label for="titulo">Titulo:</label><br>
+            <input id="titulo" type="text" accesskey="t" placeholder="Alt + t"><br>
+            <label for="classificacao">Classificação:</label><br>
+            <select name="classificacao" id="classificacao">
+                <option value="livre">Livre</option>
+                <option value="12">12 Anos</option>
+                <option value="16">16 Anos</option>
+                <option value="18">18 Anos</option>
+            </select><br>
+            <label for="genero">Genero</label><br>
+            <select name="genero" id="genero">
+                <option value="acao">Ação</option>
+                <option value="aventura">Aventura</option>
+                <option value="comedia">Comédia</option>
+                <option value="drama">Drama</option>
+                <option value="romance">Romance</option>
+            </select><br>
+            <label for="resumo">Resumo</label><br>
+            <textarea name="resumo" id="resumo" rows="6" cols="20"></textarea>
+        </p>
+    </div>
+
+</body>
+</html>
