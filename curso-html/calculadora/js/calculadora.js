@@ -1,5 +1,5 @@
 btnCalcular = document.getElementById('calcular');
-btnSelecionar = document.getElementById('operacao')
+btnSelecionar = document.getElementById('operacao');
 
 function calculadora() {
     let numero1 = Number(document.getElementById('valor1').value);
@@ -26,9 +26,9 @@ function calculadora() {
         default:
             break;
     }
-    document.getElementById('resultado').textContent = String(resposta)
+    document.getElementById('resultado').textContent = String(resposta);
 }
 
 
-btnCalcular.addEventListner('click',calculadora);
-btnSelecionar.addEventListner('change', calculadora);
+btnCalcular.addEventListener('click',calculadora);
+btnSelecionar.addEventListener('change', calculadora);
