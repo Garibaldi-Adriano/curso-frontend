@@ -1,12 +1,13 @@
-btnCalcular = document.getElementById('calcular')
+btnCalcular = document.getElementById('calcular');
+btnSelecionar = document.getElementById('operacao')
 
-function calculadora(){
-    let numero1 = Number(document.getElementById('valor1.value'))
-    let numero2 = Number(document.getElementById('valor2.value'))
-    let opcao = document.getElementById('operacao').value
+function calculadora() {
+    let numero1 = Number(document.getElementById('valor1').value);
+    let numero2 = Number(document.getElementById('valor2').value);
+    let opcao = document.getElementById('operacao').value;
     let resposta = 0;
 
-    switch(opcao){
+    switch (opcao){
         case 'soma':
             resposta = numero1 + numero2;
             break;
@@ -29,4 +30,5 @@ function calculadora(){
 }
 
 
-btnCalcular.addEventListner('click',calculadora)
+btnCalcular.addEventListner('click',calculadora);
+btnSelecionar.addEventListner('change', calculadora);

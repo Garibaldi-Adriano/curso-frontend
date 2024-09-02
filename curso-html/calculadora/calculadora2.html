@@ -8,31 +8,30 @@
 <body>
     <h1>Calculadora V2</h1>
     <hr>
+    <h3>Calculadora Aritmética</h3>
+    <br>
     <p>
         <label for="valor1">Valor1 (positivo):</label>
         <input type="text" id="valor1">
     </p>
-    
     <p>
-        <label for="operacao">Operador Arit:</label>
+        <label for="operacao">Operador Arit.:</label>
         <select name="operacao" id="operacao">
-        <option value="soma">Soma</option>
-        <option value="subtracao">Subtração</option>
-        <option value="multiplicacao">Multiplicação</option>
-        <option value="divisao">Divisão</option>
-        <option value="resto">Resto</option>
-        </select>
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+            <option value="resto">Resto da Divisão</option>
+        </select><br>
+    </p>
+    <p>
+        <label for="valor2">Valor2 (inteiro):</label>
+        <input type="text" id="valor2"><br>
     </p>
 
-    <p>
-        <label for="valor2">Valor2 (positivo):</label>
-        <input type="text" id="valor2">
-    </p>
-
-    <p>
-        <label for="resultado">Resultado:</label>
-        <output id="resultado" name="resultado"></output>
-    </p>
+    <label for="resultado">Resultado final:</label>
+    <output id="resultado" name="resultado"></output>
+    <br><br>
 
     <input type="button" id="calcular" value="Calcular">
     <script src="./js/calculadora.js"></script>
