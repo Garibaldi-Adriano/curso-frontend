@@ -4,22 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salas</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/cinema.js" defer></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js" defer></script>
 </head>
 <body>
-    <h1>SG-Cinema</h1>
-    <hr>
-    <p>
-        <a href="./home.html">Home</a> &nbsp;
-        <a href="./filme.html">Filmes</a>&nbsp;
-        <a href="./sessao.html">Sessões</a>&nbsp;
-        <a href="./sala.html">Salas</a>&nbsp;
-        <a href="./ingresso.html">Ingressos</a>&nbsp;
-        <a href="./cliente.html">Cliente</a>&nbsp;
-        <a href="./contato.html">Contato</a>&nbsp;
-        <hr>
-    </p>
-    <h3 id="tituloPage">Salas</h3>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>SG-Cinema</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./filme.html">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sessao.html">Sessões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sala.html">Salas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ingresso.html">Ingressos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cliente.html">Cliente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contato.html">Contato</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div class="m-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Sala</th>
+                  <th scope="col">Categoria</th>
+                  <th scope="col">Filme</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>VIP</td>
+                  <td>Harry Potter e a Pedra Filosofal (2001)</td>
+                  
+                  </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>IMAX</td>
+                    <td>Harry Potter e a Câmara Secreta (2002)</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>VIP</td>
+                    <td>Harry Potter e o Prisioneiro de Azkaban (2004)</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>3D</td>
+                    <td>Harry Potter e o Cálice de Fogo (2005)</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>VIP</td>
+                    <td>Harry Potter e a Ordem da Fênix (2007)</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>IMAX</td>
+                    <td>Harry Potter e o Enigma do Príncipe (2009)</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>3D</td>
+                    <td>Harry Potter e as Relíquias da Morte: Parte 1 (2010)</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>VIP</td>
+                    <td>Harry Potter e as Relíquias da Morte: Parte 2 (2011)</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+
 </body>
 </html>

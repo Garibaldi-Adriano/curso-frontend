@@ -4,22 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sessões</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/cinema.js" defer></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js" defer></script>
 </head>
 <body>
-    <h1>SG-Cinema</h1>
-    <hr>
-    <p>
-        <a href="./home.html">Home</a> &nbsp;
-        <a href="./filme.html">Filmes</a>&nbsp;
-        <a href="./sessao.html">Sessões</a>&nbsp;
-        <a href="./sala.html">Salas</a>&nbsp;
-        <a href="./ingresso.html">Ingressos</a>&nbsp;
-        <a href="./cliente.html">Cliente</a>&nbsp;
-        <a href="./contato.html">Contato</a>&nbsp;
-        <hr>
-    </p>
-    <h3 id="tituloPage">Sessões</h3>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>SG-Cinema</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./filme.html">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sessao.html">Sessões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sala.html">Salas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ingresso.html">Ingressos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cliente.html">Cliente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contato.html">Contato</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="m-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Sala</th>
+                  <th scope="col">Filme</th>
+                  <th scope="col">Duração</th>
+                  <th scope="col">Horários</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Harry Potter e a Pedra Filosofal (2001)</td>
+                  <td>152 minutos</td>
+                  <td>10h00 - 12h32 | 12h47 - 15h19 | 15h34 - 18h06 | 18h21 - 20h53
+
+                  </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Harry Potter e a Câmara Secreta (2002)</td>
+                    <td>161 minutos</td>
+                    <td>10h00 - 12h41 | 12h56 - 15h37 | 15h52 - 18h33 | 18h48 - 21h29</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Harry Potter e o Prisioneiro de Azkaban (2004)</td>
+                    <td>142 minutos</td>
+                    <td>10h00 - 12h22 | 12h37 - 14h59 | 15h14 - 17h36 | 17h51 - 20h13</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Harry Potter e o Cálice de Fogo (2005)</td>
+                    <td>157 minutos</td>
+                    <td>10h00 - 12h37 | 12h52 - 15h29 | 15h44 - 18h21 | 18h36 - 21h13</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Harry Potter e a Ordem da Fênix (2007)</td>
+                    <td>138 minutos</td>
+                    <td>10h00 - 12h18 | 12h33 - 14h51 | 15h06 - 17h24 | 17h39 - 19h57</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Harry Potter e o Enigma do Príncipe (2009)</td>
+                    <td>153 minutos</td>
+                    <td>10h00 - 12h33 | 12h48 - 15h21 | 15h36 - 18h09 | 18h24 - 20h57</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Harry Potter e as Relíquias da Morte: Parte 1 (2010)</td>
+                    <td>146 minutos</td>
+                    <td>10h00 - 12h26 | 12h41 - 15h07 | 15h22 - 17h48 | 18h03 - 20h29</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Harry Potter e as Relíquias da Morte: Parte 2 (2011)</td>
+                    <td>130 minutos</td>
+                    <td>10h00 - 12h10 | 12h25 - 14h35 | 14h50 - 17h00 | 17h15 - 19h25</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+
 </body>
 </html>
