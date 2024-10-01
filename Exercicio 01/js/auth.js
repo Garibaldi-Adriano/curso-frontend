@@ -69,7 +69,6 @@ class Auth {
         const user = Database.getUserByEmail(email);
 
         if (user && user.password === password) {
-            // Armazenar o nome e o email do usuário ao fazer login
             localStorage.setItem('loggedInUser', JSON.stringify({ name: user.name, email: user.email }));
             window.location.href = "main.html";
         } else {
@@ -105,7 +104,7 @@ const auth = new Auth();
 
 // Manipula o formulário de login
 document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault();  // Previne o envio do formulário padrão
+    event.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     auth.hideError("loginError");
