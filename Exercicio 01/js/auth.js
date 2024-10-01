@@ -6,6 +6,37 @@ class User {
     }
 }
 
+class Database {
+    // Usuários pré-cadastrados
+    static preloadedUsers = [
+        new User('Garibaldi', 'gari@asd.com', '123321'),
+        new User('Admin', 'admin@admin.com', 'admin')
+    ];
+
+    // Carregar usuários do localStorage e mesclar com os pré-cadastrados
+    static getUsers() {
+        const localStorageUsers = JSON.parse(localStorage.getItem('users')) || [];
+        return [...this.preloadedUsers, ...localStorageUsers]; // Mescla os usuários pré-carregados com os do localStorage
+    }
+
+    static addUser(user) {
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push(user);
+        // Salva no localStorage os usuários novos (sem sobrescrever os pré-cadastrados)
+        localStorage.setItem('users', JSON.stringify(users));
+    }
+
+    static getUserByEmail(email) {
+        const users = this.getUsers();
+        return users.find(user => user.email === email);
+    }
+
+    static isEmailRegistered(email) {
+        const users = this.getUsers();
+        return users.some(user => user.email === email);
+    }
+}
+
 class Auth {
     // Cadastrar novo usuário
     registerUser(name, email, password, confirmPassword) {
